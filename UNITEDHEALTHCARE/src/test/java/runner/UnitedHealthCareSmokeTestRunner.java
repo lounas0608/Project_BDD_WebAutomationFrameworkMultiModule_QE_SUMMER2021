@@ -38,7 +38,7 @@ import org.junit.runner.RunWith;
 )
 
 
-public class BankOfAmericaSmokeTestRunner {
+public class UnitedHealthCareSmokeTestRunner {
 
 
 }
