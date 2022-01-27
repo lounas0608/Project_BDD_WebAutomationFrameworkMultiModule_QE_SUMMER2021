@@ -1,0 +1,17 @@
+
+@RegressionTest @mahmud1
+Scenario: Amazon login signIn functionality checking using valid credential                  # src/test/java/features/SignIn2.feature:12
+  Given user on amazon Sign-In page                                                          # steps.SignInPageSteps.user_on_amazon_sign_in_page()
+      java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at pages.SignInPage.clickOnHelloSignIn(SignInPage.java:28)
+	at steps.SignInPageSteps.user_on_amazon_sign_in_page(SignInPageSteps.java:30)
+	at ✽.user on amazon Sign-In page(file:///C:/Users/louna/IdeaProjects/Project_BDD_WebAutomationFrameworkMultiModule_QE_SUMMER2021/AMAZON/src/test/java/features/SignIn2.feature:8)
+
+  And user enter valid "mh.shahib@gmail.com" email address or phone number in username field # steps.SignInPageSteps.user_enter_valid_email_address_or_phone_number_in_username_field(java.lang.String)
+  And user click on continue button                                                          # steps.SignInPageSteps.user_click_on_continue_button()
+  And user enter valid password in password Field                                            # steps.SignInPageSteps.user_enter_valid_password_in_password_field(io.cucumber.datatable.DataTable)
+  When user click on Sign-In button                                                          # steps.SignInPageSteps.user_click_on_sign_in_button()
+  And user should be able to see the valid "Hello,Mahmudul" user name                        # steps.SignInPageSteps.user_should_be_able_to_see_the_valid_user_name(java.lang.String)

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AMAZON/AMAZON.iml" filepath="$PROJECT_DIR$/AMAZON/AMAZON.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ATNT/ATNT.iml" filepath="$PROJECT_DIR$/ATNT/ATNT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BANKOFAMERICA/BANKOFAMERICA.iml" filepath="$PROJECT_DIR$/BANKOFAMERICA/BANKOFAMERICA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CIGNA/CIGNA.iml" filepath="$PROJECT_DIR$/CIGNA/CIGNA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DELTAAIRLINES/DELTAAIRLINES.iml" filepath="$PROJECT_DIR$/DELTAAIRLINES/DELTAAIRLINES.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EBAY/EBAY.iml" filepath="$PROJECT_DIR$/EBAY/EBAY.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EXPEDIA/EXPEDIA.iml" filepath="$PROJECT_DIR$/EXPEDIA/EXPEDIA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GEICO/GEICO.iml" filepath="$PROJECT_DIR$/GEICO/GEICO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GENERIC/GENERIC.iml" filepath="$PROJECT_DIR$/GENERIC/GENERIC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HBO/HBO.iml" filepath="$PROJECT_DIR$/HBO/HBO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Project_BDD_WebAutomationFrameworkMultiModule_QE_SUMMER2021.iml" filepath="$PROJECT_DIR$/Project_BDD_WebAutomationFrameworkMultiModule_QE_SUMMER2021.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UNITEDHEALTHCARE/UNITEDHEALTHCARE.iml" filepath="$PROJECT_DIR$/UNITEDHEALTHCARE/UNITEDHEALTHCARE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VERIZON/VERIZON.iml" filepath="$PROJECT_DIR$/VERIZON/VERIZON.iml" />
+    </modules>
+  </component>
+</project>

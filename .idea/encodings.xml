@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/AMAZON/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ATNT/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/BANKOFAMERICA/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/BANKOFAMERICA/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CIGNA/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CIGNA/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DELTAAIRLINES/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DELTAAIRLINES/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EBAY/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EBAY/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EXPEDIA/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EXPEDIA/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GEICO/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GEICO/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GENERIC/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HBO/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HBO/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/UNITEDHEALTHCARE/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/UNITEDHEALTHCARE/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/VERIZON/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/VERIZON/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
