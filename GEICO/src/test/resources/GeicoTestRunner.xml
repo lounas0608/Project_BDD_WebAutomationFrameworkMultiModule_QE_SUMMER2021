@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Amazon Test Suite">
+<suite name="GEICO Test Suite">
     <!--    parallel="tests" Working Fine but have issue-->
     <!--    parallel="none" Working Fine-->
     <!--    parallel="classes" Working Fine-->
@@ -13,7 +13,7 @@
 <!--    &lt;!&ndash;        <parameter name="osVersion" value="Big Sur"/>&ndash;&gt;-->
 <!--    <parameter name="browserName" value="chrome"/>-->
 <!--    <parameter name="browserVersion" value="96"/>-->
-<!--    <parameter name="url" value="https://www.bankofamerica.com/"/>-->
+<!--    <parameter name="url" value="https://www.geico.com/"/>-->
 
 
     <test name="Test Basics 1">

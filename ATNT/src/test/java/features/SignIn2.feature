@@ -1,4 +1,4 @@
-Feature: Amazon user should signIn/ Login on application or Amazon Login functionality check
+Feature: AT&T user should signIn/ Login on application or Amazon Login functionality check
 
   Narration:
   User can signIn when they are visiting amazon page for shopping purpose and
@@ -9,22 +9,12 @@ Feature: Amazon user should signIn/ Login on application or Amazon Login functio
 
   #@RegressionTest @SmokeTest
   @RegressionTest @mahmud1
-  Scenario: Amazon login signIn functionality checking using valid credential
-    And user enter valid "mh.shahib@gmail.com" email address or phone number in username field
-    And user click on continue button
-    And user enter valid password in password Field
-    When user click on Sign-In button
-    And user should be able to see the valid "Hello,Mahmudul" user name
+  Scenario: AT&T login signIn functionality checking using valid credential
+
 #    Then user should be able to log in their account
 #    And user should be able to see welcome message on top of Account & list
 
   @RegressionTest @mahmud
-  Scenario: Amazon login signIn functionality checking using valid credential
-    And user enter valid "lounas@gmail.com" email address or phone number in username field
-    And user click on continue button
-    And user enter valid "test123" password in password Field
-    When user click on Sign-In button
-    And user should be able to see the valid "Hello,Lounas" user name
 
 #Scenario outlines are used when the same test is performed multiple times with a different combination of values
   @RegressionTest @mahmud
