@@ -19,14 +19,14 @@
         <module name="AMAZON" />
         <module name="DELTAAIRLINES" />
         <module name="UNITEDHEALTHCARE" />
-        <module name="EXPEDIA" />
         <module name="HBO" />
+        <module name="EXPEDIA" />
         <module name="EBAY" />
         <module name="CIGNA" />
         <module name="ATNT" />
         <module name="BANKOFAMERICA" />
-        <module name="GEICO" />
         <module name="VERIZON" />
+        <module name="GEICO" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -38,7 +38,7 @@
       <module name="EBAY" target="11" />
       <module name="EXPEDIA" target="11" />
       <module name="GEICO" target="11" />
-      <module name="GENERIC" target="1.8" />
+      <module name="GENERIC" target="11" />
       <module name="HBO" target="11" />
       <module name="Project_BDD_WebAutomationFrameworkMultiModule_QE_SUMMER2021" target="11" />
       <module name="UNITEDHEALTHCARE" target="11" />
