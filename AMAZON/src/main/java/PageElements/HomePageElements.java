@@ -3,7 +3,7 @@ package PageElements;
 
 
 public class HomePageElements {
-// -WebElement Class: To Keep Locators variable
+//  -WebElement Class: To Keep Locators variable
 
     public static final String searchBoxWebElement = "//*[@id=\"twotabsearchtextbox\"]";
     public static final String searchButtonWebElement = "//*[@id=\"nav-search-submit-button\"]";
