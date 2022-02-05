@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="1.653">
-    <testcase classname="Amazon user should signIn/ Login on application or Amazon Login functionality check" name="Amazon login signIn functionality checking using valid credential" time="0.192">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.379">
+    <testcase classname="Amazon user should signIn/ Login on application or Amazon Login functionality check" name="Amazon login signIn functionality checking using valid credential" time="0.111">
         <failure message="" type="java.lang.NullPointerException">
             <![CDATA[Given user on amazon Sign-In page...........................................failed
 And user enter valid "mh.shahib@gmail.com" email address or phone number in username field.skipped
@@ -13,7 +13,7 @@ StackTrace:
 java.lang.NullPointerException
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
 	at pages.SignInPage.clickOnHelloSignIn(SignInPage.java:28)
 	at steps.SignInPageSteps.user_on_amazon_sign_in_page(SignInPageSteps.java:30)
 	at ✽.user on amazon Sign-In page(file:///C:/Users/louna/IdeaProjects/Project_BDD_WebAutomationFrameworkMultiModule_QE_SUMMER2021/AMAZON/src/test/java/features/SignIn2.feature:8)

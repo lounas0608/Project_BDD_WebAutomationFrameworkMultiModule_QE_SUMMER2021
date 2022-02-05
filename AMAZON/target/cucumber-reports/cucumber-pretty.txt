@@ -5,7 +5,7 @@ Scenario: Amazon login signIn functionality checking using valid credential     
       java.lang.NullPointerException
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
 	at pages.SignInPage.clickOnHelloSignIn(SignInPage.java:28)
 	at steps.SignInPageSteps.user_on_amazon_sign_in_page(SignInPageSteps.java:30)
 	at ✽.user on amazon Sign-In page(file:///C:/Users/louna/IdeaProjects/Project_BDD_WebAutomationFrameworkMultiModule_QE_SUMMER2021/AMAZON/src/test/java/features/SignIn2.feature:8)
