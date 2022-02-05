@@ -175,7 +175,7 @@ public class WebBase {
 
 
     //@BeforeMethod
-    public void OpenBrowser() {
+    public void OpenBrowser(String s) {
         //setUpBrowser("chrome","https://www.amazon.com/");
     }
 
