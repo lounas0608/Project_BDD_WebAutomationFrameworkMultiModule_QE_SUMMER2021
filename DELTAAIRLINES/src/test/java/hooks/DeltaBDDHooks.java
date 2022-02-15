@@ -11,12 +11,11 @@ import org.openqa.selenium.TakesScreenshot;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
-public class BddHooks extends WebBase {
-
+public class DeltaBDDHooks extends WebBase {
 
     @Before
     public void browserSetUp() throws MalformedURLException {
-        OpenBrowser("https://www.amazon.com/");
+        OpenBrowser("https://www.delta.com/");
     }
 
 
@@ -36,5 +35,18 @@ public class BddHooks extends WebBase {
     public void cleanUp() throws IOException {
         closeBrowser();
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

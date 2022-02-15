@@ -8,7 +8,7 @@ Feature: Amazon user should signIn/ Login on application or Amazon Login functio
     Given user on amazon Sign-In page
 
   #@RegressionTest @SmokeTest
-  @RegressionTest @mahmud1
+   @mahmud5
   Scenario: Amazon login signIn functionality checking using valid credential
     And user enter valid "mh.shahib@gmail.com" email address or phone number in username field
     And user click on continue button

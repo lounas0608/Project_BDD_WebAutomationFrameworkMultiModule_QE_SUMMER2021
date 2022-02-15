@@ -8,7 +8,7 @@ Feature: Amazon user should signIn/ Login on application or Amazon Login functio
     Given user on amazon Sign-In page
 
 
-  @RegressionTest @SmokeTest @mahmud
+   @mahmud6
   Scenario: Amazon login signIn functionality checking using valid credential
    # Given user on amazon Sign-In page
     And user enter valid "mh.shahib@gmail.com" email address or phone number in username field
@@ -21,7 +21,7 @@ Feature: Amazon user should signIn/ Login on application or Amazon Login functio
 
   @RegressionTest @mahmud
   Scenario: Amazon login signIn functionality checking using valid credential
-    Given user on amazon Sign-In page
+#    Given user on amazon Sign-In page
     And user enter valid "lounas@gmail.com" email address or phone number in username field
     And user click on continue button
     And user enter valid password in password Field
@@ -29,9 +29,9 @@ Feature: Amazon user should signIn/ Login on application or Amazon Login functio
     And user should be able to see the valid "Hello,Lounas" user name
 
 
-  @RegressionTest @SmokeTest @mahmud
+  @RegressionTest @SmokeTest @mahmud1
   Scenario: Amazon login signIn functionality checking using valid credential
-    Given user on amazon Sign-In page
+#    Given user on amazon Sign-In page
     And user enter valid "lounas@gmail.com" email address or phone number in username field
     And user click on continue button
     And user enter valid password in password Field

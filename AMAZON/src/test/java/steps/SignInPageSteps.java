@@ -6,7 +6,6 @@ import io.cucumber.java.BeforeStep;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.support.PageFactory;
 import pages.SignInPage;
 
 import java.net.MalformedURLException;
@@ -18,16 +17,16 @@ import static org.openqa.selenium.support.PageFactory.initElements;
 
 public class SignInPageSteps extends WebBase {
 
-    static SignInPage signInPage = initElements(driver, SignInPage.class);
+     SignInPage signInPage;
 
     @BeforeStep
-    public static void getInit() {
+    public void getInit() {
+        signInPage = initElements(driver, SignInPage.class);
     }
-
-
     @Given("user on amazon Sign-In page")
-    public void user_on_amazon_sign_in_page() throws MalformedURLException {
+    public void user_on_amazon_sign_in_page() throws MalformedURLException, InterruptedException {
         signInPage.clickOnHelloSignIn();
+        Thread.sleep(2000);
     }
 
     @Given("user enter valid {string} email address or phone number in username field")
@@ -43,13 +42,13 @@ public class SignInPageSteps extends WebBase {
     @Given("user enter valid {string} password in password Field")
     public void user_enter_valid_password_in_password_field(String pass) throws InterruptedException {
         signInPage.enterPasswordFromSignInPage(pass);
-        waitFor(10);
+        waitFor(4);
     }
 
     @When("user click on Sign-In button")
     public void user_click_on_sign_in_button() throws InterruptedException {
         signInPage.clickOnSignInButtonFromSignInPage();
-        waitFor(10);
+        waitFor(2);
     }
 
 

@@ -174,9 +174,9 @@ public class WebBase {
     }
 
 
-    //@BeforeMethod
-    public void OpenBrowser(String s) {
-        //setUpBrowser("chrome","https://www.amazon.com/");
+    public void OpenBrowser(String url) throws MalformedURLException {
+        setUpBrowser(false,"browserStack","windows","10","chrome","98",url);
+
     }
 
     @Parameters({"useCloudEnv", "cloudEnvName", "os", "osVersion", "browserName", "browserVersion", "url"})
@@ -274,7 +274,7 @@ public class WebBase {
     }
 
     public void waitUntilClickable(String locator) {
-        WebDriverWait webDriverWait = new WebDriverWait(driver, 30);
+        WebDriverWait webDriverWait = new WebDriverWait(driver, 10);
         WebElement element = webDriverWait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
         element.click();
     }
@@ -388,6 +388,17 @@ public class WebBase {
         }
     }
 
+
+    public void inputValueInTextByWebElement(WebElement webElement, String value) {
+        webElement.sendKeys(value);
+    }
+    public void inputValueInTextWebElement(WebElement webElement, String value) {
+        webElement.sendKeys(value,Keys.ENTER);
+    }
+
+
+
+
     public void clearField(String locator) {
         driver.findElement(By.id(locator)).clear();
     }
@@ -439,12 +450,17 @@ public class WebBase {
     public void takeEnterKeys(String locator) {
         driver.findElement(By.cssSelector(locator)).sendKeys(Keys.ENTER);
     }
+    public void takeEnterKeysValue(String locator,String value) {
+        driver.findElement(By.xpath(locator)).sendKeys(value,Keys.ENTER);
+    }
 
     public void clearInputField(String locator) {
         driver.findElement(By.cssSelector(locator)).clear();
     }
 
-
+    public void clearInputFieldXpath(String locator) {
+        driver.findElement(By.xpath(locator)).clear();
+    }
     public List<WebElement> getListOfWebElementsById(String locator) {
         List<WebElement> list = new ArrayList<WebElement>();
         list = driver.findElements(By.id(locator));
@@ -590,6 +606,14 @@ public class WebBase {
         action.moveToElement(element).perform();
     }
 
+    public void mouseHoverByCSSelector(String locator) {
+        WebElement element = driver.findElement(By.cssSelector(locator));
+        Actions action = new Actions(driver);
+        action.moveToElement(element).perform();
+    }
+
+
+
     //handling Alert
     public void okAlert() {
         Alert alert = driver.switchTo().alert();
@@ -634,7 +658,7 @@ public class WebBase {
     }
 
     public void waitUntilVisible(By locator) {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, 6);
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
@@ -650,7 +674,7 @@ public class WebBase {
          */
     }
 
-
+//=======********
     //Handling New Tabs
     public static WebDriver handleNewTab(WebDriver driver1) {
         String oldTab = driver1.getWindowHandle();
@@ -731,6 +755,7 @@ public class WebBase {
         Date date = new Date();
         System.out.println(formatter.format(date));
         System.out.println(" my test suite started at this time --> " + formatter.format(date));
+
     }
 
     // --------------------- EDIT BOX / TYPE -----------------------
@@ -779,7 +804,7 @@ public class WebBase {
 
     public void waitTimeExplicit(String locator) {
         // Explicit wait
-        WebDriverWait wait = new WebDriverWait(driver, 15);
+        WebDriverWait wait = new WebDriverWait(driver, 8);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
     }
 

@@ -27,7 +27,7 @@ import io.cucumber.testng.CucumberOptions;
                 "pretty:target/cucumber-reports/cucumber-pretty.txt",
                 "rerun:target/cucumber-reports/cucumber-rerun.txt",
         },
-        tags = "@mahmud1 and not @pending"
+        tags = "@Books"
 //        tags = "@mahmud,~@pending"
       // tags =("@mahmud1","-@pending")
 //        tags = "@RegressionTest and @SmokeTest and @mahmud and not @pending"

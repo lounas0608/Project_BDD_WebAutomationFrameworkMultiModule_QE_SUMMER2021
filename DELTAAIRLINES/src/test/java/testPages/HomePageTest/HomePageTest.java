@@ -1,12 +1,7 @@
 package testPages.HomePageTest;
 
-import pages.HomePage;
 import configuration.common.WebBase;
-import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
-import static configuration.utilities.DataDriven.getItemValue;
 import static configuration.utilities.DataDriven.getItemsListFromDB;
 
 public class HomePageTest extends WebBase {
