@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         features = "src/test/java/features",
         // The path of the step Definition files
         //glue = "src/test/java/com/amazon/steps",
-        glue = {"steps","configuration.hooks"},
+        glue = {"steps","hooks"},
         // display the console output in a proper readable format
         monochrome = true,
         publish = true,

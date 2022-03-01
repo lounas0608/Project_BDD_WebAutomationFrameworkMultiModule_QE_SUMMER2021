@@ -61,8 +61,9 @@ Feature: AT&T user should signIn/ Login on application or Amazon Login functiona
 
 
   @RegressionTest @mahmud
-  Scenario: Sign up functionality check using valid data from data table1
-    And I enter valid information
+  Scenario: Sign up functionality check using invalid data from dataTable
+    Given user on Amazon home page
+    And  enter inValid information
       | userName | EmailAddress     | password | RePassword |
       | mahmud   | mahmud@gmail.com | test123  | test123    |
     When I click on create your amazon account

@@ -3,6 +3,7 @@ package steps;
 import configuration.common.WebBase;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.BeforeStep;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -61,7 +62,7 @@ public class SignInPageSteps extends WebBase {
 //    public void userShouldBeAbleToSeeTheValidUserName(String name) {
 //
 //    }
-
+//=========================================================================================================================
     @Then("user should be able to log in their account")
     public void user_should_be_able_to_log_in_their_account() {
 
@@ -130,4 +131,55 @@ public class SignInPageSteps extends WebBase {
 
     }
 
+    @And("I enter valid user {string} and email {string} address and password {string} and reEnterPassword {string}")
+    public void iEnterValidUserAndEmailAddressAndPasswordAndReEnterPassword(String arg0, String arg1, String arg2, String arg3) {
+    }
+
+    @When("I click on create your amazon account")
+    public void iClickOnCreateYourAmazonAccount() {
+    }
+//=========================================================================================================================
+    @And("user hover on hello sign In Account and list")
+    public void userHoverOnHelloSignInAccountAndList() throws InterruptedException {
+        wait(10);
+        signInPage.accountSignIn();
+         wait(15);
+
+    }
+
+    @And("user click on start here")
+    public void userClickOnStartHere() throws InterruptedException {
+        signInPage.clickOnSignInHere();
+        Thread.sleep(5000);
+    }
+
+    @And("user enter inValid information")
+    public void userEnterInValidInformation(DataTable dataTable) {
+
+        List<List<String>> data = dataTable.asLists(String.class);
+
+        String inputUserName = data.get(1).get(0);
+        String inputEmailAddress = data.get(1).get(1);
+        String inputPassword = data.get(1).get(2);
+        String inputRePassword = data.get(1).get(3);
+
+        signInPage.enterNameField(inputUserName);
+        signInPage.enterMobilOrEmail(inputEmailAddress);
+        signInPage.enterPassWord(inputPassword);
+        signInPage.reEnterPassWord(inputRePassword);
+
+
+    }
+
+    @And("user enter Mobile number in the input field")
+    public void userEnterMobileNumberInTheInputField() {
+    }
+
+    @And("user enter passWord in the passWord field")
+    public void userEnterPassWordInThePassWordField() {
+    }
+
+    @And("user enter re enter passWord in the input field")
+    public void userEnterReEnterPassWordInTheInputField() {
+    }
 }

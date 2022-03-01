@@ -11,7 +11,7 @@ import org.openqa.selenium.TakesScreenshot;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
-public class DeltaBDDHooks extends WebBase {
+public class DeltaAirLineHooks extends WebBase {
 
     @Before
     public void browserSetUp() throws MalformedURLException {
@@ -36,17 +36,9 @@ public class DeltaBDDHooks extends WebBase {
         closeBrowser();
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
+
+
+
+

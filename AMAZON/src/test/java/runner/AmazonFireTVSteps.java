@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         features = "src/test/java/features",
         // The path of the step Definition files
         //glue = "src/test/java/com/amazon/steps",
-        glue = {"steps","configuration.hooks"},
+        glue = {"steps","hooks"},
         // display the console output in a proper readable format
         monochrome = true,
         publish = true,
@@ -28,7 +28,7 @@ import org.junit.runner.RunWith;
                 "pretty:target/cucumber-reports/cucumber-pretty.txt",
                 "rerun:target/cucumber-reports/cucumber-rerun.txt",
         },
-        tags = "@mahmud1 and not @pending"
+        tags = ""
 //        tags = "@mahmud,~@pending"
       // tags =("@mahmud1","-@pending")
 //        tags = "@RegressionTest and @SmokeTest and @mahmud and not @pending"
@@ -40,7 +40,7 @@ import org.junit.runner.RunWith;
 )
 
 
-public class AmazonTestRunner {
+public class AmazonFireTVSteps{
 
 
 }

@@ -20,69 +20,127 @@ public class DeltaAirLinesHomePage extends WebBase {
     public WebElement clickOnStaySafeLinkWeb;
     @FindBy(xpath = verifyExpectStaySafeWebElement)
     public WebElement verifyExpectStaySafeWeb;
+//=========================================================================================================================
+    // Scenario: Delta air line home page Travel info for Rent a car functionality
 
-    public void travelInfoLink() {
+    @FindBy(xpath = rentCarLinkWebElement)
+    public WebElement rentCarLinkWeb;
+    @FindBy(xpath = enterPickUpLocationWebElement)
+    public WebElement enterPickUpLocationWeb;
+    @FindBy(xpath = choosePickUpDateFromCalenderWebElement)
+    public WebElement choosePickUpDateFromCalenderWeb;
+    @FindBy(xpath = chooseDropOffDateFromCalenderWEbElement)
+    public WebElement chooseDropOffDateFromCalenderWeb;
+    @FindBy(xpath = selectPickUpTimeWebElement)
+    public WebElement selectPickUpTimeWeb;
+    @FindBy(xpath = selectDropOffTimeWebElement)
+    public WebElement selectDropOffTimeWeb;
+    @FindBy(xpath = clickOnBookACarWebElement)
+    public WebElement clickOnBookACarWeb;
+    //=======================================================================================================
+    // Scenario: Delta air line home page Travel info for shop hotels link
+    @FindBy(xpath = shopHotelsLinkWebElement)
+    public WebElement shopHotelsLinkWeb;
+    @FindBy(xpath = inputDestinationsWebElement)
+    public WebElement inputDestinationsWeb;
+    @FindBy(xpath = checkInDateWebElement)
+    public WebElement checkInDateWeb;
+    @FindBy(xpath = checkOutDateWebElement)
+    public WebElement checkOutDateWeb;
+    @FindBy(xpath = SearchButtonShopHotelsWebElement)
+    public WebElement SearchButtonShopHotelsWeb;
+    @FindBy(xpath = verifyShopResultWebElement)
+    public WebElement verifyShopResultWeb;
+    //====================================================================================================
+    @FindBy(xpath = chooseSkyMilesNumberWebElement)
+    public WebElement chooseSkyMilesNumberWeb;
+    @FindBy(xpath = enterSkyMilesNumberWebElement)
+    public WebElement enterSkyMilesNumberWeb;
 
-        mouseHoverByXpath1("//a[@id='headSectab1']");
-    }
+    //===============================================================================================
+    @FindBy(xpath = clickOnAirCraftWebElement)
+    public WebElement clickOnAirCraftWeb;
+    @FindBy(xpath = clickOnAirBusWebElement)
+    public WebElement clickOnAirBusWeb;
+    @FindBy(xpath = aircraftSpecificationWebElement)
+    public WebElement aircraftSpecificationWeb;
+    @FindBy(xpath = verifyAirCraftResultWebElement)
+    public WebElement verifyAirCraftResultWEb;
 
-    public void clickOnStaySafeLink() {
-        clickOnStaySafeLinkWeb.click();
-    }
+    //==========================================================================================================
+    //  Scenario: Delta air line home page Booking functionality
+    @FindBy(xpath = clickOnBookingLinkWebElement)
+    public WebElement clickOnBookingLinkWeb;
+    @FindBy(xpath = clickOnDestinationWebElement)
+    public WebElement clickOnDestinationWeb;
+    @FindBy(xpath = inputDestinationWebElement)
+    public WebElement inputDestinationWeb;
+    @FindBy(xpath = clickOnRoundWayWebElement)
+    public WebElement clickOnRoundWayWeb;
+    @FindBy(xpath = clickOnOneWayLinkWebElement)
+    public WebElement clickOnOneWayLinkWeb;
+    @FindBy(xpath = clickOnDepartLinkWebElement)
+    public WebElement clickOnDepartLinkWeb;
+    @FindBy(xpath = chooseCalenderDateWebElement)
+    public WebElement chooseCalenderDateWeb;
+    @FindBy(xpath = clickOnArrowSignWebElement)
+    public WebElement clickOnArrowSignWeb;
+    @FindBy(xpath = verifyOneWayBookingWebElement)
+    public WebElement verifyOneWayBookingWeb;
+    //=============================================================================================================
+    @FindBy(xpath = roundTripTravelDateWebElement)
+    public WebElement roundTripTravelDateWeb;
+    @FindBy(xpath = arrivingDateTravelDateWebElement)
+    public WebElement arrivingDateTravelDateWeb;
+    @FindBy(xpath = verifyRoundTripWebElement)
+    public WebElement verifyRoundTripWeb;
+    //=====================================================================================
+    @FindBy(xpath = clickOnMultiCityWebElement)
+    public WebElement clickOnMultiCityWeb;
+    @FindBy(xpath = flightOneDestinationWebElement)
+    public WebElement flightOneDestinationWeb;
+    @FindBy(xpath = flightTwoDestinationWebElement)
+    public WebElement flightTwoDestinationWeb;
+    @FindBy(xpath = clickFirstCalenderWebElement)
+    public WebElement clickFirstCalenderWeb;
+    @FindBy(xpath = clickSecondCalenderWebElement)
+    public WebElement clickSecondCalenderWeb;
+    @FindBy(xpath = verifyMultiTripResultWebElement)
+    public WebElement verifyMultiTripResultWeb;
+    //=========================================================================================================
+    @FindBy(xpath = CheckInLinkWebElement)
+    public WebElement CheckInLinkWeb;
+    @FindBy(xpath = chooseCreditCardWebElement)
+    public WebElement chooseCreditCardWeb;
+    @FindBy(xpath = enterCreditCardNumberWebElement)
+    public WebElement enterCreditCardNumberWeb;
+    @FindBy(xpath = enterLastNameWebElement)
+    public WebElement enterLastNameWeb;
+    @FindBy(xpath = clickOnFormAirPortWebElement)
+    public WebElement clickOnFormAirPortWeb;
 
-    public void verifyExpectStaySafe(String expectStaySafeResult) {
-        String actualStaySafeResult = verifyExpectStaySafeWeb.getText();
-        Assert.assertEquals(actualStaySafeResult, expectStaySafeResult, "the actual result");
+    //===============================================================================================================
 
-    }
-//==================================================================================================
+    @FindBy(xpath = chooseTicketNumberWebElement)
+    public WebElement chooseTicketNumberWeb;
+    @FindBy(xpath = enterTicketNumberWebElement)
+    public WebElement enterTicketNumberWeb;
+    @FindBy(xpath = clickOnAirPortWebElement)
+    public WebElement clickOnAirPortWeb;
+    @FindBy(xpath = enterAirPortNameWebElement)
+    public WebElement enterAirPortNameWeb;
+    //===================================================================================================================
     //  Scenario: Delta air line home page Travel info link
 
     @FindBy(xpath = travelPlaningCenterElement)
     public WebElement travelPlaningCenterWeb;
-
     @FindBy(xpath = knowBeforeYouGoWebElement)
     public WebElement knowBeforeYouGoWeb;
     @FindBy(xpath = testingResourcesWebElement)
     public WebElement testingResourcesWeb;
     @FindBy(xpath = verifyTestingResultWebElement)
     public WebElement verifyTestingResultWeb;
-
-    public void travelPlaningCenter() {
-        travelPlaningCenterWeb.click();
-    }
-
-    public void knowBeforeYouGo() {
-        knowBeforeYouGoWeb.click();
-    }
-
-    public void testingResources() {
-        testingResourcesWeb.click();
-    }
-
-    public void verifyTestingResult(String expectedTestingResult) {
-        String actualTestingResult = verifyTestingResultWeb.getText();
-        Assert.assertEquals(actualTestingResult, expectedTestingResult, "Teh actual result didn't match ");
-    }
-//==================================================================================================================
-    //   Scenario: Delta air line home Travel info for U.S. Entry Requirements
-
-    @FindBy(xpath = USEntryRequirementsWebElement)
-    public WebElement USEntryRequirementsWeb;
-    @FindBy(xpath = verifyUSEntryResultWebElement)
-    public WebElement verifyUSEntryResultWeb;
-
-
-    public void USEntryRequirements() {
-        USEntryRequirementsWeb.click();
-    }
-
-    public void verifyUSEntryResult(String expectedUSEntryResult) {
-        String actualUSEntryResult = verifyUSEntryResultWeb.getText();
-        Assert.assertEquals(actualUSEntryResult, expectedUSEntryResult, "The actual result didn't match");
-    }
-
-    //================================================================================================
+    //=======================================================================================================
     // Scenario: Delta air line home page Travel info for flight deals
     @FindBy(xpath = flightDealsWebElement)
     public WebElement flightDealsWeb;
@@ -94,33 +152,12 @@ public class DeltaAirLinesHomePage extends WebBase {
     public WebElement DestinationLinkWeb;
     @FindBy(xpath = verifyRoundTripFareWebElement)
     public WebElement verifyRoundTripFareWeb;
-
-
-    public void flightDealsLink() {
-        flightDealsWeb.click();
-    }
-
-    public void withInUSLink() {
-        withInUSLinkWeb.click();
-    }
-
-    public void chooseOriginLink() {
-        inputValueInTextWebElement(chooseOriginWeb, "NYC");
-
-    }
-
-    public void DestinationLink() {
-        //selectByVisibleTextFromSelect(DestinationLinkWeb,"AMS");
-        inputValueInTextWebElement(DestinationLinkWeb, "BOS");
-        DestinationLinkWeb.click();
-
-    }
-
-    public void verifyRoundTripFare(String expectRoundTripResult) {
-        String actualRoundTripResult = verifyRoundTripFareWeb.getText();
-        Assert.assertEquals(actualRoundTripResult, expectRoundTripResult, "the actual result didn't match");
-    }
-
+    //=================================================================================================================
+    //   Scenario: Delta air line home Travel info for U.S. Entry Requirements
+    @FindBy(xpath = USEntryRequirementsWebElement)
+    public WebElement USEntryRequirementsWeb;
+    @FindBy(xpath = verifyUSEntryResultWebElement)
+    public WebElement verifyUSEntryResultWeb;
     //============================================================================================================
     @FindBy(xpath = baggageLinkWebElement)
     public WebElement baggageLinkWeb;
@@ -149,8 +186,6 @@ public class DeltaAirLinesHomePage extends WebBase {
 //====================================================================================================================
 //  Scenario: Delta air line home page Travel info for Explore Top Destinations
 //
-
-
     @FindBy(xpath = findYourDestinationWebElement)
     public WebElement findYourDestinationWeb;
     @FindBy(xpath = exploreTopDestinationsWebElement)
@@ -172,6 +207,94 @@ public class DeltaAirLinesHomePage extends WebBase {
     public WebElement searchButtonToExploreWeb;
     @FindBy(xpath = verifyExploreDestinationWebElement)
     public WebElement verifyExploreDestinationWeb;
+    //===========================================================================================
+    //     //Scenario: Delta air line home page Travel info for CHANGE OR CANCEL YOUR TRIP
+    @FindBy(xpath = changeOrCancelTRIPLinkWebElement)
+    public WebElement changeOrCancelTRIPLinkWeb;
+    @FindBy(xpath = howToCancelOrChangeFlightWebElement)
+    public WebElement howToCancelOrChangeFlightWeb;
+    @FindBy(xpath = changeOrCancelLinkWebElement)
+    public WebElement changeOrCancelLinkWeb;
+    @FindBy(xpath = verifyCancelInformationResult)
+    public WebElement verifyCancelInformation;
+
+
+
+    public void travelInfoLink() {
+
+        mouseHoverByXpath1("//a[@id='headSectab1']");
+    }
+
+    public void clickOnStaySafeLink() {
+        clickOnStaySafeLinkWeb.click();
+    }
+
+    public void verifyExpectStaySafe(String expectStaySafeResult) {
+        String actualStaySafeResult = verifyExpectStaySafeWeb.getText();
+        Assert.assertEquals(actualStaySafeResult, expectStaySafeResult, "the actual result");
+
+    }
+//==================================================================================================
+
+
+    public void travelPlaningCenter() {
+        travelPlaningCenterWeb.click();
+    }
+
+    public void knowBeforeYouGo() {
+        knowBeforeYouGoWeb.click();
+    }
+
+    public void testingResources() {
+        testingResourcesWeb.click();
+    }
+
+    public void verifyTestingResult(String expectedTestingResult) {
+        String actualTestingResult = verifyTestingResultWeb.getText();
+        Assert.assertEquals(actualTestingResult, expectedTestingResult, "Teh actual result didn't match ");
+    }
+//==================================================================================================================
+    //   Scenario: Delta air line home Travel info for U.S. Entry Requirements
+    public void USEntryRequirements() {
+        USEntryRequirementsWeb.click();
+    }
+
+    public void verifyUSEntryResult(String expectedUSEntryResult) {
+        String actualUSEntryResult = verifyUSEntryResultWeb.getText();
+        Assert.assertEquals(actualUSEntryResult, expectedUSEntryResult, "The actual result didn't match");
+    }
+
+    //================================================================================================
+    // Scenario: Delta air line home page Travel info for flight deals
+
+
+
+    public void flightDealsLink() {
+        flightDealsWeb.click();
+    }
+
+    public void withInUSLink() {
+        withInUSLinkWeb.click();
+    }
+
+    public void chooseOriginLink() {
+        inputValueInTextWebElement(chooseOriginWeb, "NYC");
+
+    }
+
+    public void DestinationLink() {
+        //selectByVisibleTextFromSelect(DestinationLinkWeb,"AMS");
+        inputValueInTextWebElement(DestinationLinkWeb, "BOS");
+        DestinationLinkWeb.click();
+
+    }
+
+    public void verifyRoundTripFare(String expectRoundTripResult) {
+        String actualRoundTripResult = verifyRoundTripFareWeb.getText();
+        Assert.assertEquals(actualRoundTripResult, expectRoundTripResult, "the actual result didn't match");
+    }
+
+    //============================================================================================================
 
 
     //===========================================================================================================
@@ -228,18 +351,6 @@ public class DeltaAirLinesHomePage extends WebBase {
 //==================================================================================================================
     //     //Scenario: Delta air line home page Travel info for CHANGE OR CANCEL YOUR TRIP
 
-
-    @FindBy(xpath = changeOrCancelTRIPLinkWebElement)
-    public WebElement changeOrCancelTRIPLinkWeb;
-
-    @FindBy(xpath = howToCancelOrChangeFlightWebElement)
-    public WebElement howToCancelOrChangeFlightWeb;
-
-    @FindBy(xpath = changeOrCancelLinkWebElement)
-    public WebElement changeOrCancelLinkWeb;
-
-    @FindBy(xpath = verifyCancelInformationResult)
-    public WebElement verifyCancelInformation;
     //=====================================================================================
     //Scenario: Delta air line home page Travel info for CHANGE OR CANCEL YOUR TRIP
 
@@ -317,41 +428,6 @@ public class DeltaAirLinesHomePage extends WebBase {
         travelDateWeb.click();
     }
     //===================================================================================================================
-    // Scenario: Delta air line home page Travel info for Rent a car functionality
-
-    @FindBy(xpath = rentCarLinkWebElement)
-    public WebElement rentCarLinkWeb;
-
-    @FindBy(xpath = enterPickUpLocationWebElement)
-    public WebElement enterPickUpLocationWeb;
-
-    @FindBy(xpath = choosePickUpDateFromCalenderWebElement)
-    public WebElement choosePickUpDateFromCalenderWeb;
-
-    @FindBy(xpath = chooseDropOffDateFromCalenderWEbElement)
-    public WebElement chooseDropOffDateFromCalenderWeb;
-
-    @FindBy(xpath = selectPickUpTimeWebElement)
-    public WebElement selectPickUpTimeWeb;
-
-    @FindBy(xpath = selectDropOffTimeWebElement)
-    public WebElement selectDropOffTimeWeb;
-    @FindBy(xpath = clickOnBookACarWebElement)
-    public WebElement clickOnBookACarWeb;
-    //=======================================================================================================
-    // Scenario: Delta air line home page Travel info for shop hotels link
-    @FindBy(xpath = shopHotelsLinkWebElement)
-    public WebElement shopHotelsLinkWeb;
-    @FindBy(xpath = inputDestinationsWebElement)
-    public WebElement inputDestinationsWeb;
-    @FindBy(xpath = checkInDateWebElement)
-    public WebElement checkInDateWeb;
-    @FindBy(xpath = checkOutDateWebElement)
-    public WebElement checkOutDateWeb;
-    @FindBy(xpath = SearchButtonShopHotelsWebElement)
-    public WebElement SearchButtonShopHotelsWeb;
-    @FindBy(xpath = verifyShopResultWebElement)
-    public WebElement verifyShopResultWeb;
 
 
     //===================================================================================================================
@@ -426,17 +502,6 @@ public class DeltaAirLinesHomePage extends WebBase {
 
     }
 
-    //===============================================================================================
-    @FindBy(xpath = clickOnAirCraftWebElement)
-    public WebElement clickOnAirCraftWeb;
-    @FindBy(xpath = clickOnAirBusWebElement)
-    public WebElement clickOnAirBusWeb;
-    @FindBy(xpath = aircraftSpecificationWebElement)
-    public WebElement aircraftSpecificationWeb;
-    @FindBy(xpath = verifyAirCraftResultWebElement)
-    public WebElement verifyAirCraftResultWEb;
-
-
     public void clickOnAirCraftLink() {
         clickOnAirCraftWeb.click();
     }
@@ -456,24 +521,7 @@ public class DeltaAirLinesHomePage extends WebBase {
 
     //==========================================================================================
     //  Scenario: Delta air line home page Booking functionality
-    @FindBy(xpath = clickOnBookingLinkWebElement)
-    public WebElement clickOnBookingLinkWeb;
-    @FindBy(xpath = clickOnDestinationWebElement)
-    public WebElement clickOnDestinationWeb;
-    @FindBy(xpath = inputDestinationWebElement)
-    public WebElement inputDestinationWeb;
-    @FindBy(xpath = clickOnRoundWayWebElement)
-    public WebElement clickOnRoundWayWeb;
-    @FindBy(xpath = clickOnOneWayLinkWebElement)
-    public WebElement clickOnOneWayLinkWeb;
-    @FindBy(xpath = clickOnDepartLinkWebElement)
-    public WebElement clickOnDepartLinkWeb;
-    @FindBy(xpath = chooseCalenderDateWebElement)
-    public WebElement chooseCalenderDateWeb;
-    @FindBy(xpath = clickOnArrowSignWebElement)
-    public WebElement clickOnArrowSignWeb;
-    @FindBy(xpath = verifyOneWayBookingWebElement)
-    public WebElement verifyOneWayBookingWeb;
+
 
     public void clickOnBookingLink() {
         clickOnBookingLinkWeb.click();
@@ -518,12 +566,6 @@ public class DeltaAirLinesHomePage extends WebBase {
     }
 
     //=============================================================================================================
-    @FindBy(xpath = roundTripTravelDateWebElement)
-    public WebElement roundTripTravelDateWeb;
-    @FindBy(xpath = arrivingDateTravelDateWebElement)
-    public WebElement arrivingDateTravelDateWeb;
-    @FindBy(xpath = verifyRoundTripWebElement)
-    public WebElement verifyRoundTripWeb;
 
 
     public void setInputDestinationAirPort() {
@@ -549,32 +591,20 @@ public class DeltaAirLinesHomePage extends WebBase {
 
 
     //=====================================================================================
-    @FindBy(xpath = clickOnMultiCityWebElement)
-    public WebElement clickOnMultiCityWeb;
-    @FindBy(xpath = flightOneDestinationWebElement)
-    public WebElement flightOneDestinationWeb;
-    @FindBy(xpath = flightTwoDestinationWebElement)
-    public WebElement flightTwoDestinationWeb;
-    @FindBy(xpath = clickFirstCalenderWebElement)
-    public WebElement clickFirstCalenderWeb;
-    @FindBy(xpath = clickSecondCalenderWebElement)
-    public WebElement clickSecondCalenderWeb;
-    @FindBy(xpath = verifyMultiTripResultWebElement)
-    public WebElement verifyMultiTripResultWeb;
 
 
     public void clickOnMultiCity() {
         clickOnMultiCityWeb.click();
     }
 
-    public void flightOneDestination() {
-        inputValueInTextWebElement(flightOneDestinationWeb, "BOS");
+    public void flightOneDestination(String firstFlightDestination) {
+        inputValueInTextWebElement(flightOneDestinationWeb, firstFlightDestination);
         clickByXpath1("//button[contains(@class,'search-flyout-close float-right d-none d-lg-block circle-outline icon-moreoptionsclose')]");
         //lightOneDestinationWeb.click();
     }
 
-    public void flightTwoDestination() {
-        inputValueInTextWebElement(flightTwoDestinationWeb, "MSY");
+    public void flightTwoDestination(String secondFlight) {
+        inputValueInTextWebElement(flightTwoDestinationWeb, secondFlight);
         clickByXpath1("//button[@class='search-flyout-close float-right d-none d-lg-block circle-outline icon-moreoptionsclose']");
         // flightTwoDestinationWeb.click();
     }
@@ -604,19 +634,7 @@ public class DeltaAirLinesHomePage extends WebBase {
         Assert.assertEquals(actualMultiTripResult, expectedMultiTripResult, "the actual result didn't match");
 
     }
-
     //=========================================================================================================
-    @FindBy(xpath = CheckInLinkWebElement)
-    public WebElement CheckInLinkWeb;
-    @FindBy(xpath = chooseCreditCardWebElement)
-    public WebElement chooseCreditCardWeb;
-    @FindBy(xpath = enterCreditCardNumberWebElement)
-    public WebElement enterCreditCardNumberWeb;
-    @FindBy(xpath = enterLastNameWebElement)
-    public WebElement enterLastNameWeb;
-    @FindBy(xpath = clickOnFormAirPortWebElement)
-    public WebElement clickOnFormAirPortWeb;
-
 
     public void CheckInLink() {
         CheckInLinkWeb.click();
@@ -628,8 +646,8 @@ public class DeltaAirLinesHomePage extends WebBase {
 
     }
 
-    public void enterCreditCardNumber() {
-        inputValueInTextWebElement(enterCreditCardNumberWeb, "1231429482354364");
+    public void enterCreditCardNumber(String Credit) {
+        inputValueInTextWebElement(enterCreditCardNumberWeb, Credit);
     }
 
     public void enterLastName() {
@@ -648,54 +666,42 @@ public class DeltaAirLinesHomePage extends WebBase {
 
     }
 
-    @FindBy(xpath = chooseTicketNumberWebElement)
-    public WebElement chooseTicketNumberWeb;
-
-    @FindBy(xpath = enterTicketNumberWebElement)
-    public WebElement enterTicketNumberWeb;
-
-    @FindBy(xpath = clickOnAirPortWebElement)
-    public WebElement clickOnAirPortWeb;
-
-    @FindBy(xpath = enterAirPortNameWebElement)
-    public WebElement enterAirPortNameWeb;
 
     public void chooseTicketNumber() {
         chooseTicketNumberWeb.click();
         clickByXpath1("//li[@id='ui-list-searchType2']");
     }
 
-    public void enterTicketNumber() {
-        inputValueInTextWebElement(enterTicketNumberWeb,"0062112549881");
+    public void enterTicketNumber(String TicketNumber) {
+        inputValueInTextWebElement(enterTicketNumberWeb, TicketNumber);
     }
 
     public void clickOnAirPort() {
         clickOnAirPortWeb.click();
     }
 
-    public void enterAirPortName() throws InterruptedException {
-        inputValueInTextWebElement(enterAirPortNameWeb,"DTW");
+    public void enterAirPortName(String airPort) throws InterruptedException {
+        inputValueInTextWebElement(enterAirPortNameWeb, airPort);
         Thread.sleep(4000);
         clickByXpath1("//button[@class='search-flyout-close float-right d-none d-lg-block circle-outline icon-moreoptionsclose']");
     }
     //===========================================================================================
-    @FindBy(xpath = chooseSkyMilesNumberWebElement)
-    public WebElement chooseSkyMilesNumberWeb;
- @FindBy(xpath = enterSkyMilesNumberWebElement)
-    public WebElement enterSkyMilesNumberWeb;
 
-public void chooseSkyMilesNumber() {
-    chooseSkyMilesNumberWeb.click();
-    clickByXpath1("//li[@id='ui-list-searchType3']");
-}
-   public void enterSkyMilesNumber() {
-       inputValueInTextWebElement(enterSkyMilesNumberWeb,"1234567892");
 
-   }
+    public void chooseSkyMilesNumber() {
+        chooseSkyMilesNumberWeb.click();
+        clickByXpath1("//li[@id='ui-list-searchType3']");
+    }
+
+    public void enterSkyMilesNumber() {
+        inputValueInTextWebElement(enterSkyMilesNumberWeb, "1234567892");
+
+    }
+
     public void clickRedArrow() {
-    clickByXpath1("//button[@id='btn-checkin-submit']");
+        clickByXpath1("//button[@id='btn-checkin-submit']");
 
-}
+    }
 //public void () { }
 //public void () { }
 //public void () { }

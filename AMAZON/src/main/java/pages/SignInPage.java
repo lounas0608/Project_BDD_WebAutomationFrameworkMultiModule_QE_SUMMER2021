@@ -22,6 +22,47 @@ public class SignInPage extends WebBase {
     public WebElement signInButtonFromSignInPage;
     @FindBy(xpath = welcomeUserNameWebElement)
     public WebElement welcomeUserName;
+   //===================================================================================================================
+    @FindBy(xpath = accountSignInWebElement)
+    public WebElement accountSignInWeb;
+    @FindBy(xpath = clickOnSignInHereWebElement)
+    public WebElement clickOnSignInHereWeb;
+    @FindBy(xpath = enterNameWebElement)
+    public WebElement enterNameWeb;
+    @FindBy(xpath = enterMobilOrEmailWebElement)
+    public WebElement enterMobilOrEmailWeb;
+    @FindBy(xpath = enterPassWordWebElement)
+    public WebElement enterPassWordWeb;
+    @FindBy(xpath = reEnterPassWordWebElement)
+    public WebElement reEnterPassWordWeb;
+
+    public void accountSignIn(){
+        mouseHoverByXpath1("//span[normalize-space()='Account & Lists']");
+    }
+    public void clickOnSignInHere(){
+        clickOnSignInHereWeb.click();
+    }
+    public void enterNameField( String enterName){
+        enterNameWeb.sendKeys(enterName);
+    }
+    public void enterMobilOrEmail(String EnterEmail){
+        enterMobilOrEmailWeb.sendKeys(EnterEmail);
+    }
+    public void enterPassWord( String enterPassWordField){
+        enterPassWordWeb.sendKeys(enterPassWordField);
+    }
+    public void reEnterPassWord( String reEnterPassWordField){
+        reEnterPassWordWeb.sendKeys(reEnterPassWordField);
+    }
+
+
+
+
+
+
+
+
+
 
 
     public void clickOnHelloSignIn(){

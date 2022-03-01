@@ -10,4 +10,19 @@ public class SignInPageElements {
 
 
 
+
+
+    public static final String accountSignInWebElement="//a[@id='nav-link-accountList']";
+    public static final String clickOnSignInHereWebElement="//div[@id='nav-flyout-ya-newCust']//a[@class='nav-a'][normalize-space()='Start here.']";
+    public static final String enterNameWebElement="//input[@id='ap_customer_name']";
+    public static final String enterMobilOrEmailWebElement="//input[@id='ap_email']";
+    public static final String enterPassWordWebElement="//input[@id='ap_password']";
+    public static final String reEnterPassWordWebElement="//input[@id='ap_password_check']";
+
+
+
+
+
+
+
 }

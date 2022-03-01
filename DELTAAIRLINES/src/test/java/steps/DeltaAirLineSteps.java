@@ -1,6 +1,7 @@
 package steps;
 
 import configuration.common.WebBase;
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.BeforeStep;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -10,6 +11,10 @@ import org.apache.poi.ss.formula.functions.T;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Wait;
 import pages.DeltaAirLinesHomePage;
+
+import java.util.List;
+import java.util.Map;
+
 
 public class DeltaAirLineSteps extends WebBase {
 
@@ -444,16 +449,30 @@ public class DeltaAirLineSteps extends WebBase {
     }
 
     @And("user enter first flight Destination")
-    public void userEnterFirstFlightDestination() throws InterruptedException {
-       Thread.sleep(3000);
-       deltaAirLinesHomePage.flightOneDestination();
-       Thread.sleep(2000);
+    public void userEnterFirstFlightDestination(DataTable dataTable) throws InterruptedException {
+       List<Map<String, String>> data=dataTable.asMaps(String.class, String.class);
+        for (Map<String, String> rows:data) {
+            String firstFlight = rows.get("firstFlight");
+            Thread.sleep(3000);
+            deltaAirLinesHomePage.flightOneDestination(firstFlight);
+            Thread.sleep(2000);
+        }
     }
 
     @And("user enter second flight Destination")
-    public void userEnterSecondFlightDestination() throws InterruptedException {
-       Thread.sleep(3000);
-       deltaAirLinesHomePage.flightTwoDestination();
+    public void userEnterSecondFlightDestination(DataTable dataTable) throws InterruptedException {
+      List<Map<String,String>> data=dataTable.asMaps(String.class, String.class);
+      for(Map<String, String>row:data){
+          String secondFlight=row.get("secondFlight");
+          deltaAirLinesHomePage.flightTwoDestination(secondFlight);
+          Thread.sleep(3000);
+      }
+//        public void i_enter_valid_information(io.cucumber.datatable.DataTable dataTable) {
+//            List<List<String>> data = dataTable.asLists(String.class);
+//
+//            String userName = data.get(1).get(0);
+
+
     }
 
     @And("user click on calender and choose first flight date")
@@ -497,20 +516,21 @@ public class DeltaAirLineSteps extends WebBase {
     }
 
     @And("user enter credit card number in the text field")
-    public void userEnterCreditCardNumberInTheTextField() {
-       deltaAirLinesHomePage.enterCreditCardNumber();
-    }
-
+    public void userEnterCreditCardNumberInTheTextField(DataTable creditTable) {
+       List<Map<String, String>> data= creditTable.asMaps(String.class, String.class);
+       for(Map<String, String> row:data){
+           String Credit= row.get("Credit");
+           deltaAirLinesHomePage.enterCreditCardNumber(Credit);
+       }
+   }
     @And("user enter last name in the text field")
     public void userEnterLastNameInTheTextField() {
        deltaAirLinesHomePage.enterLastName();
     }
-
     @And("user enter on From AirPort")
     public void userEnterOnFromAirPort() {
        deltaAirLinesHomePage.clickOnFormAirPort();
     }
-
     @And("user click on arrow button")
     public void userClickOnArrowButton() throws InterruptedException {
        Thread.sleep(4000);
@@ -521,12 +541,18 @@ public class DeltaAirLineSteps extends WebBase {
     public void userChooseTicketNumber() throws InterruptedException {
        waitFor(5);
        deltaAirLinesHomePage.chooseTicketNumber();
+   }
+   @And("user enter Ticket number in the text field")
+    public void userEnterTicketNumberInTheTextField(DataTable dataTable) {
+      // deltaAirLinesHomePage.enterTicketNumber(TicketNumber);
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+        for (Map<String, String> rows:data){
+            String Ticket = rows.get("Ticket");
+            deltaAirLinesHomePage.enterTicketNumber(Ticket);
+            // signInPage.enterEmailAndPhoneNumber(rows.get("email"));
+        }
 
-    }
 
-    @And("user enter Ticket number in the text field")
-    public void userEnterTicketNumberInTheTextField() {
-       deltaAirLinesHomePage.enterTicketNumber();
     }
 
     @And("user click on From AirPort")
@@ -535,9 +561,13 @@ public class DeltaAirLineSteps extends WebBase {
     }
 
     @And("user enter AirPort Name in the text field")
-    public void userEnterAirPortNameInTheTextField() throws InterruptedException {
-       deltaAirLinesHomePage.enterAirPortName();
-        waitFor(6);
+    public void userEnterAirPortNameInTheTextField(DataTable dataTable) throws InterruptedException {
+       List< Map<String, String>> data= dataTable.asMaps(String.class, String.class);
+       for (Map<String, String> row:data) {
+           String AirPortName = row.get("AirPortName");
+           deltaAirLinesHomePage.enterAirPortName(AirPortName);
+           waitFor(6);
+       }
     }
 //==================================================================================================================
     @And("user choose SkyMiles number")

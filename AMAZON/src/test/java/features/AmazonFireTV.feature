@@ -51,7 +51,7 @@ Feature: Amazon fire Tv functionality
     When user click on Sign-in button
 
 
-  @Storage
+  @RegressionTest
   Scenario Outline: check the Storage account functionality
 #    Given user on Amazon home page
     And user click on bold All link on the left side of the application

@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         features = "src/test/java/features",
         // The path of the step Definition files
         //glue = "src/test/java/com/amazon/steps",
-        glue = {"steps","configuration.hooks"},
+        glue = {"steps","hooks"},
         // display the console output in a proper readable format
         monochrome = true,
         publish = true,
@@ -28,7 +28,7 @@ import org.junit.runner.RunWith;
                 "pretty:target/cucumber-reports/cucumber-pretty.txt",
                 "rerun:target/cucumber-reports/cucumber-rerun.txt",
         },
-        tags = "@RegressionTest and not @pending"
+        tags = "@RegressionTest"
         //tags = "@RegressionTest and @SmokeTest and @mahmud and not @pending"
         //tags = "(   @mahmud   ) and (not @pending)"
         //tags = "(@SmokeTest or @RegressionTest or @IntegrationTest ) and (not @pending)"
