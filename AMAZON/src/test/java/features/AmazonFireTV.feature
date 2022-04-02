@@ -63,8 +63,8 @@ Feature: Amazon fire Tv functionality
     When user click on Sign-in button
     Examples:
       | email | password |
-      |jasmain@gmail.com| test12345|
-      |tahmina          |bddhdaud1234|
+      |jack@gmail.com| test12345|
+      |tahmina@gmail.com |bddhdaud1234|
 
 
 
